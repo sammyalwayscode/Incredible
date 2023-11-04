@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import Card from "./Card";
+// import testIcon from "../../assets/svg";
 
 const UpperContainer = () => {
   return (
     <Container>
       <Wrapper>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card userName="@jameskofo" totalFollowers="1543" />
+        <Card userName="@Jidebenson" totalFollowers="4223" />
+        {/* <Card userName="@Jidebenson" totalFollowers="4223" myIcon={testIcon} /> */}
+        <Card userName="@matinjames" totalFollowers="7172" />
+        <Card userName="@godwinbest" totalFollowers="9917" />
       </Wrapper>
     </Container>
   );

@@ -1,14 +1,15 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 
-const Card = () => {
+const Card = ({ userName, totalFollowers, myIcon }) => {
   return (
     <CardBox>
       <SecondComp>
-        <Icon>FB</Icon>
-        <span>@nathanf</span>
+        <Icon>{myIcon}</Icon>
+        <span> {userName} </span>
       </SecondComp>
       <ThirdComp>
-        <span>1987</span>
+        <span>{totalFollowers}</span>
         <small>Followers</small>
       </ThirdComp>
       <ForthComp>
