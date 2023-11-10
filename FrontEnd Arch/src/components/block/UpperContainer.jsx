@@ -6,8 +6,8 @@ const UpperContainer = () => {
   return (
     <Container>
       <Wrapper>
-        <Card userName="@jameskofo" totalFollowers="1543" />
-        <Card userName="@Jidebenson" totalFollowers="4223" />
+        <Card userName="@jameskofo" totalFollowers="1543" headColor="pink" />
+        <Card userName="@Jidebenson" totalFollowers="4223" headColor="red" />
         {/* <Card userName="@Jidebenson" totalFollowers="4223" myIcon={testIcon} /> */}
         <Card userName="@matinjames" totalFollowers="7172" />
         <Card userName="@godwinbest" totalFollowers="9917" />

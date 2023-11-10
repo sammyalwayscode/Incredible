@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
 
-const Card = ({ userName, totalFollowers, myIcon }) => {
+// const name = "shade"
+// const tell = `My name is ${name}`
+
+const Card = ({ userName, totalFollowers, myIcon, headColor }) => {
   return (
-    <CardBox>
+    <CardBox bgCol={headColor}>
       <SecondComp>
         <Icon>{myIcon}</Icon>
         <span> {userName} </span>
@@ -26,7 +29,8 @@ const CardBox = styled.div`
   height: 300px;
   width: 300px;
   background-color: #f0f3fa;
-  border-top: 4px solid #2586df;
+  border-top: 4px solid ${(props) => props.bgCol};
+  /* border-top: 4px solid ${(ball) => ball.ballColor}; */
   /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
