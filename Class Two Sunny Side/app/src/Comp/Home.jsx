@@ -1,4 +1,5 @@
 import HeroPage from "./HeroPage";
+import Galery from "./block/Galery";
 import HomeOne from "./block/HomeOne";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <HeroPage />
       <HomeOne />
+      <Galery />
     </div>
   );
 };
