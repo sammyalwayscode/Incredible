@@ -1,10 +1,8 @@
-import Header from "./Comp/Header";
-import Home from "./Comp/Home";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
     <div>
-      <Header />
       <Home />
     </div>
   );
