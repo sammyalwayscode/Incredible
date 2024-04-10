@@ -38,6 +38,7 @@ const Background = styled.div`
   width: 100%;
   height: 100%;
   background-color: #edfbfe;
+  margin-bottom: 150px;
 `;
 const Container = styled.div`
   width: 100%;
