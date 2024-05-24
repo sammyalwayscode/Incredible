@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const APIOne = () => {
@@ -29,6 +30,9 @@ const APIOne = () => {
           <div>
             <img src={myData.image} alt="" />
           </div>
+          <Link to={`/detail/${myData.id}`}>
+            <button>View More</button>
+          </Link>
         </Card>
       ))}
     </div>

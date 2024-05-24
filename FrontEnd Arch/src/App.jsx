@@ -1,14 +1,19 @@
-// import Home from "../src/pages/Home/Home";
-// import Header from "./components/static/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import APIOne from "./ApiConsumption/APIOne";
+import GetOnePage from "./ApiConsumption/GetOnePage";
 
 const App = () => {
   return (
     <div>
-      {/* <Header />
+      <BrowserRouter>
+        <Routes>
+          {/* <Header />
       <Home /> */}
-      <APIOne />
+          <Route path="/" element={<APIOne />} />
+          <Route path="/detail/:id" element={<GetOnePage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
