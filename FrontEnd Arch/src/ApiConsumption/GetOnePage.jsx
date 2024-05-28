@@ -1,10 +1,28 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 const GetOnePage = () => {
+  const { id } = useParams();
+
+  const [getOneData, setGetOneData] = useState({});
+
+  const getOneApi = async () => {
+    const responce = await axios.get(`https://fakestoreapi.com/products/${id}`);
+    setGetOneData(responce.data);
+  };
+
+  useEffect(() => {
+    getOneApi();
+  }, []);
+
+  console.log(getOneData);
   return (
     <Container>
-      <Title>My Title</Title>
-      <Price>22</Price>
-      <Discription>My Content</Discription>
+      <Title> {getOneData.title} </Title>
+      <Price> ${getOneData.price} </Price>
+      <Discription> {getOneData.description} </Discription>
+      <img src={getOneData.image} alt="" />
     </Container>
   );
 };
